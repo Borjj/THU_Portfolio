@@ -45,7 +45,7 @@ public class LocalFogVolume : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("MainCamera"))
+        if (other.CompareTag("Player") /*|| other.CompareTag("MainCamera")*/)
         {
             // Restore original fog settings
             RenderSettings.fog = originalFogEnabled;
